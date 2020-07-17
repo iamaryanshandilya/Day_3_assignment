@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<script>
+    function par()
+    {
+        var s;
+        s = Number(document.getElementById("no_input").value);
+        if (s >= 80)
+            document.write("Marks are <b>"+s+"</b> and grade is A" );
+        else if ((s < 80) && (s >= 50))
+            document.write("Marks are <b>"+s+"</b> and grade is B" );
+        else if ((s < 50) && (s > 35))
+            document.write("Marks are <b>"+s+"</b> and grade is C" );
+        else
+            document.write("Marks are <b>"+s+"</b> and grade is D" );
+
+    }
+</script>
+</head>
+<body>
+   Enter your marks <input id="no_input"><br />
+<button onclick="par()">Click me</button>
+</body>
+</html>

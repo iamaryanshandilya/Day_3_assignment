@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<script>
+    function par()
+    {
+        var s;
+        s = String(document.getElementById("no_input").value);
+        var arr = s.split(" ");
+        document.write("The OS name is <b>"+arr[0]+"</b> and version is <b>" + arr[1]);
+    }
+</script>
+</head>
+<body>
+   The OS name and version<input id="no_input"><br />
+<button onclick="par()">Click me</button>
+</body>
+</html>
